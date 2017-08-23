@@ -1,0 +1,25 @@
+{
+  "name": "pheel",
+  "version": "1.0.0",
+  "description": "Phil Haberern portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaberern/pheel.git"
+  },
+  "author": "Phil Haberern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phaberern/pheel/issues"
+  },
+  "homepage": "https://github.com/phaberern/pheel#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0"
+  }
+}
