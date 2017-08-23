@@ -1,24 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Portfolio">
-      <title>Pheel By Design</title>
-      <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-   </head>
-   <body>
-   <div class="container">
-   <div class="header">
-   	<h1>Pheel By Design</h1>
-   		<ul class="nav">
-   			<li>CSS</li>
-   			<li>JavaScript</li>
-   			<li>Images</li>
-   			<li>Illustrations</li>
-   		</ul>
-   </div>
-   <div class="content"></div>
-   <div class="footer"></div>
-   </div>
-   </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title Template -->
+    <title>Phil Haberern</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- Hover Dir -->
+    <link rel="stylesheet" href="css/hoverdir.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Loading Page-->
+    <div id="loader">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!-- Btn To Top --><i class="fa fa-arrow-up btn_top"></i>
+    <!-- Section Navigation Bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand text-uppercase" href="#">PH</a> </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- Start Container Fluid Section -->
+    <div class="container-fluid">
+        <!-- Header Section -->
+        <div class="row">
+            <section id="header">
+                <div id="header-info">
+                    <h2 class="text-uppercase">Pheel by Design</h2>
+                    <p></p>
+                </div>
+            </section>
+        </div>
+        <!-- About Me Section -->
+        <div class="row">
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="text-uppercase">About Me</h2>
+                        <p><em>"We are like butterflies who flutter for a day and think it is forever." - CS</em></p>
+                    </div>
+                    <div id="about_me" class="mrg_top80">
+                        <div class="row">
+                            <!-- Image Profile -->
+                            <div class="col-md-6"> <img src="./img/headshot.jpg" alt="Image Profile"> </div>
+                            <div class="col-md-6">
+                                <!-- A Littel Store About Me -->
+                                <div class="row">
+                                    <div id="store">
+                                        <h3>Hey <br> I'm Phil Haberern.</h3>
+                                        <p class="mrg_top20">I love science. I love space. I love helping people. I am a graduate from the University of North Carolina at Charlotte. I had a rocky start when I declared myself a Chemistry major... ended with an art degree focused in Graphic Design! And now I am a data analyst by day who spends his nights learning skills that can help people.</p>
+                                        <p>I decided to get into web development because the internet is one heck of a platform to help people! It extends my reach to the farthest parts of the world. Whether the goal is to create a website for a family owned shop somewhere in the midwest, or an enterprise application that eliminates and abstracts unnecessary work from business operations, development has the ability to free up our time and let us focus on what truly matters.</p>
+                                        <p>I am always looking for new opportunities to help people. Feel free to download my resume and contact me with any questions!</p>
+                                        <!-- Button Download Resume -->
+                                        <button class="btn resume mrg_top20">Download Resume</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Skills Section -->
+        <div class="row">
+            <section id="skills" class="section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="text-uppercase">My Skills</h2>
+                    </div>
+                    <div id="my_skill" class="mrg_top40">
+                        <div class="row">
+                            <p class="text-center">Languages</p>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>75%</h3>
+                                    <p class="text-center">HTML5/CSS3</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="75%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3> 65%</h3>
+                                    <p class="text-center">JQUERY</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="65%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>55%</h3>
+                                    <p class="text-center">MySQL</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="55%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>60%</h3>
+                                    <p class="text-center">JAVASCRIPT</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="60%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center">Frameworks</p>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>60%</h3>
+                                    <p class="text-center">NODE.js</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="65%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>60%</h3>
+                                    <p class="text-center">Bootstrap</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="65%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Skill -->
+                            <div class="col-sm-3 col-md-3">
+                                <div class="single_skill">
+                                    <h3>15%</h3>
+                                    <p class="text-center">.NET</p>
+                                    <div class="progress mrg_top20">
+                                        <div class="progress-bar" role="progressbar" data-percent="15%"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Portfolio Section -->
+        <div class="row">
+            <section id="portfolio" class="section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="text-uppercase">My Projects</h2>
+                        <p>Check out some things I have done!</p>
+                    </div>
+                    <div id="my_works" class="mrg_top80">
+                        <!-- Filtring Works -->
+                        <ul class="controls list-untyled list-inline text-center">
+                            <li class="control actived" data-filter="all">All</li>
+                            <li class="control" data-filter=".graphic">Design</li>
+                            <li class="control" data-filter=".development">Development</li>
+                            <li class="control" data-filter=".data">Data</li>
+                            <li class="control" data-filter=".in-progress">Active</li>
+                        </ul>
+                        <div class="work_filter mrg_top40">
+                            <div class="row da-thumbs" id="da-thumbs">
+                                <!-- Single Work -->
+                                <div class="mix development col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="http://waggsworld.herokuapp.com/"> <img src="./img/waggsworld.png" alt="image Project" />
+                                        <div>
+                                            <h4><span>WaggsWorld</span></h4></div>
+                                    </a>
+                                </div>
+                                <!-- Single Work -->
+                                <div class="mix development col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="https://sms-dallas.herokuapp.com/"> <img src="./img/sms.png" alt="image Project" />
+                                        <div>
+                                            <h4><span>SMS School Management System</span></h4></div>
+                                    </a>
+                                </div>
+                                <!-- Single Work -->
+                                <div class="mix development col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="https://phaberern.github.io/Giftastic/"> <img src="./img/letsgetgifty.png" alt="image Project" />
+                                        <div>
+                                            <h4><span>Lets Git Gifty</span></h4></div>
+                                    </a>
+                                </div>
+                                <!-- Single Work -->
+                                <div class="mix graphic col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="#"> <img src="http://placehold.it/1280x886" alt="image Project" />
+                                        <div>
+                                            <h4><span>Haberern Wedding</span></h4></div>
+                                    </a>
+                                </div>
+                                <!-- Single Work -->
+                                <div class="mix graphic col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="#"> <img src="http://placehold.it/1280x886" alt="image Project" />
+                                        <div>
+                                            <h4><span>Colquit Wedding</span></h4></div>
+                                    </a>
+                                </div>
+                                <!-- Single Work -->
+                                <div class="mix data col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="#"> <img src="http://placehold.it/1280x886" alt="image Project" />
+                                        <div>
+                                            <h4><span>File Monitor</span></h4></div>
+                                    </a>
+                                </div>
+                                <div class="mix in-progress col-xs-12 col-sm-6 col-md-4 hover">
+                                    <a href="https://github.com/phaberern/CraftingScholars"> <img src="http://placehold.it/1280x886" alt="image Project" />
+                                        <div>
+                                            <h4><span>Client Tracker</span></h4></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- freelance Section -->
+        <div class="row">
+            <section id="freelance" class="section text-center">
+                <div class="container">
+                    <!-- available for freelance -->
+                    <h2 class="text-capitalize">I am available for freelance work</h2>
+                    <p>I offer a wide range of services. Front to back end developing and consulting and graphic design work.</p>
+                    <button class="btn contact_me">Contact Me</button>
+                </div>
+            </section>
+        </div>
+        <!-- Blog Section -->
+        <!-- <div class="row">
+            <section id="blog" class="section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="text-uppercase">My Interests</h2>
+                        <p>Check out some of my personal interests</p>
+                    </div>
+                    <div id="my_news" class="mrg_top80 row-eq-height">
+                        <div class="row">
+
+                            <div class="col-sm-6 col-md-6">
+                                <div class="single_news">
+                                    <div class="img_news"> <img src="http://placehold.it/1280x675" alt="Blog Image"> </div>
+                                    <div class="news">
+                                        <div class="topic">
+                                            <div class="title_topic">
+                                                <h4><a href="#">Google could learn from rival Microsoft in EU's antitrust decision</a></h4>
+                                                <p class="date pull-left"><i class="fa fa-calendar color"></i> 26 feb 2017</p>
+                                                <p class="author_name pull-left"><i class="fa fa-user color"></i> By Admin</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <p class="mrg_top20 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...</p>
+                                        </div>
+
+                                        <div class="topic_info mrg_top40 text-center">
+                                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                                <p class="like"><i class="fa fa-heart"></i> 30</p>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                                <p class="comment"><i class="fa fa-comment"></i> 60</p>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                                <p class="viwes"><i class="fa fa-eye"></i> 190</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+        <!-- Contact Section -->
+        <div class="row">
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2 class="text-uppercase">GET IN TOUCH</h2>
+                        <p>If you have any questions about the work I have done or would like to pick my brain, send me a message and I will respond within a fortnight.</p>
+                    </div>
+                    <!-- Form Contact -->
+                    <div id="form_contact" class="mrg_top80">
+                        <div class="row">
+                            <form>
+                                <div class="form-group col-sm-6 col-md-6">
+                                    <input type="text" class="form-control" placeholder="usename" required> </div>
+                                <div class="form-group col-sm-6 col-md-6">
+                                    <input type="email" class="form-control" placeholder="e-mail" required> </div>
+                                <div class="form-group col-sm-12 col-md-12">
+                                    <input type="text" class="form-control" placeholder="subject" required> </div>
+                                <div class="form-group col-sm-12 col-md-12">
+                                    <textarea cols="30" rows="10" class="form-control" placeholder="message" required></textarea>
+                                </div>
+                                <div class="form-group col-sm-2 col-md-2">
+                                    <button type="submit" class="btn contact_us">Send Email</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- End Container Fluid Section -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
+    <!-- mixitUp -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Hover Dir -->
+    <script src="js/jquery.hoverdir.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+
 </html>
