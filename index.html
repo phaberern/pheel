@@ -84,7 +84,9 @@
                                         <p>I decided to get into web development because the internet is one heck of a platform to help people! It extends my reach to the farthest parts of the world. Whether the goal is to create a website for a family owned shop somewhere in the midwest, or an enterprise application that eliminates and abstracts unnecessary work from business operations, development has the ability to free up our time and let us focus on what truly matters.</p>
                                         <p>I am always looking for new opportunities to help people. Feel free to download my resume and contact me with any questions!</p>
                                         <!-- Button Download Resume -->
-                                        <button class="btn resume mrg_top20">Download Resume</button>
+                                        <form method="get" action="./resources/PhilHaberernResume.pdf">
+                                            <button class="btn resume mrg_top20">Download Resume</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -253,16 +255,15 @@
             </section>
         </div>
         <!-- freelance Section -->
-        <div class="row">
+        <!-- <div class="row">
             <section id="freelance" class="section text-center">
                 <div class="container">
-                    <!-- available for freelance -->
                     <h2 class="text-capitalize">I am available for freelance work</h2>
                     <p>I offer a wide range of services. Front to back end developing, consulting and graphic design work.</p>
                     <button class="btn contact_me">Contact Me</button>
                 </div>
             </section>
-        </div>
+        </div> -->
         <!-- Blog Section -->
         <!-- <div class="row">
             <section id="blog" class="section">
@@ -320,7 +321,7 @@
                     <!-- Form Contact -->
                     <div id="form_contact" class="mrg_top80">
                         <div class="row">
-                            <form>
+                            <form action="mailto:phillip.haberern5@gmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">
                                 <div class="form-group col-sm-6 col-md-6">
                                     <input type="text" class="form-control" placeholder="usename" required> </div>
                                 <div class="form-group col-sm-6 col-md-6">
